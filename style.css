@@ -1,0 +1,1027 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body {
+    background-color: rgba(242, 227, 209, 0.432);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /**About navigation bar**/
+  nav {
+    border: 0.5px solid rgba(128, 128, 128, 0);
+    height: 80px;
+    width: 100%;
+    background-color: rgba(241, 235, 226, 0.917);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ;
+  }
+  
+  nav ul li {
+  
+    display: inline-block;
+  }
+  
+  .img {
+    position: absolute;
+    top: 25px;
+    left: 190px;
+    height: 30px;
+    width: 125px;
+    cursor: pointer
+  }
+  
+  
+  button {
+    width: 145px;
+    height: 55px;
+    border-radius: 45px;
+    background-color: rgba(5, 191, 5, 0.742);
+    position: absolute;
+    left: 1625px;
+    top: 13px;
+    transition: 1.5s;
+    box-shadow: inset 0 0 0 0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    box-shadow: inset 0 400px 0 0 rgb(244, 6, 6);
+    color: white
+  }
+  
+  .Nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  
+  }
+  
+  /**this section about transition on nav bar**/
+  #fe {
+    position: absolute;
+    left: 735px;
+    top: 30px;
+    cursor: pointer;
+  }
+  
+  #fe:hover,
+  #he:hover,
+  #pr:hover,
+  #bl:hover,
+  #buis:hover,
+  #web:hover {
+    color: black;
+  }
+  
+  #he {
+    position: absolute;
+    left: 820px;
+    top: 30px;
+    cursor: pointer
+  }
+  
+  #pr {
+    position: absolute;
+    left: 940px;
+    top: 30px;
+    cursor: pointer
+  }
+  
+  #bl {
+    position: absolute;
+    left: 1040px;
+    top: 30px;
+    cursor: pointer
+  }
+  
+  #buis {
+    position: absolute;
+    left: 1110px;
+    top: 30px;
+    cursor: pointer
+  }
+  
+  #web {
+    position: absolute;
+    left: 1435px;
+    top: 30px;
+    cursor: pointer
+  }
+  
+  .line {
+    height: 2px;
+    width: 2px;
+    background: rgb(90, 240, 90);
+    transition: .5s;
+    visibility: hidden;
+    margin-top: 6px;
+    height: 2.4px;
+  }
+  
+  #fe:hover .line {
+    width: 50px;
+  
+    visibility: visible;
+  }
+  
+  #he:hover .line {
+    width: 80px;
+  
+    visibility: visible;
+  }
+  
+  #pr:hover .line {
+    width: 50px;
+  
+    visibility: visible;
+  }
+  
+  #bl:hover .line {
+    width: 35px;
+  
+    visibility: visible;
+  }
+  
+  #buis:hover .line {
+    width: 80px;
+  
+    visibility: visible;
+  }
+  
+  #web:hover .line {
+    width: 110px;
+  
+    visibility: visible;
+  }
+  
+  
+  /**this section about the mohter and daughter image and the text written in**/
+  .pic {
+    position: absolute;
+  
+    top: 125px;
+    border-radius: 25px;
+    width: 92%;
+    height: 740px;
+    left: 68PX;
+  }
+  
+  p {
+    position: absolute;
+    left: 355px;
+    top: 325px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75px;
+    color: white;
+    line-height: 1;
+  }
+  
+  #para {
+    font-size: 20px;
+    position: absolute;
+    top: 515px;
+  }
+  
+  .download {
+    height: 45px;
+  }
+  
+  /**this section about chat pic's css and transition on the mohter daughter image **/
+  
+  #msg {
+    position: absolute;
+    width: 450px;
+    left: 639px;
+    top: -100px;
+    animation: msg 1s forwards;
+    opacity: 0;
+    animation-delay: 2s;
+  }
+  
+  
+  
+  #mug {
+    position: absolute;
+    left: 1060px;
+    top: 280px;
+    height: 95px;
+    animation: msg 1s forwards;
+    opacity: 0;
+    animation-delay: 3.5s;
+  }
+  
+  
+  #msgs {
+    position: absolute;
+    width: 430px;
+    left: 995px;
+    top: 400px;
+    animation: msg 1s forwards;
+    opacity: 0;
+    animation-delay: 4.5s
+  }
+  
+  
+  #picmsg {
+    position: absolute;
+    width: 400px;
+    left: 999px;
+    top: 490px;
+    animation: msg .4s forwards;
+    opacity: 0;
+    animation-delay: 5.5s;
+  }
+  
+  #emo {
+    position: absolute;
+    width: 400px;
+    left: 1100px;
+    top: 750px;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 7.5s
+  }
+  
+  @keyframes msg {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(1px);
+      visibility: visible;
+    }
+  }
+  
+  /**this section about emoji's css and transition on mother and daughter image**/
+  #nxtmsg {
+    position: absolute;
+    width: 400px;
+    left: 990px;
+    top: 705px;
+    animation: emoji .7s forwards;
+    opacity: 0;
+    animation-delay: 6s;
+  }
+  
+  #heart {
+    width: 450px;
+    margin-left: 639px;
+    position: absolute;
+    top: -85px;
+    animation: emoji .5s forwards;
+    opacity: 0;
+    animation-delay: 3s
+  }
+  
+  @keyframes emoji {
+    0% {
+      opacity: 0;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  
+  
+  
+  #box {
+  
+    height: 45px;
+    width: 125px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    left: 350px;
+    top: 638px;
+    background-color: rgba(64, 210, 59, 0.862);
+  }
+  
+  /**this section about download button on mother and daughter section **/
+  .logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 376px;
+    top: 648px;
+    text-decoration: none;
+    background-color: rgba(64, 210, 59, 0.862);
+    height: 45px;
+    width: 125px;
+    text-align: center;
+    left: 350px;
+    top: 638px;
+    border-radius: 20px;
+    transition: 2s;
+    box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  
+  .logo:hover {
+    box-shadow: inset 0 400px 0 0 rgb(248, 39, 39);
+    color: white;
+  
+  }
+  
+  #do {
+    margin-top: 10px;
+  }
+  
+  /**this section is after the main box of daughter an mother**/
+  #nxtpic {
+    margin-top: 896px;
+    width: 1329px;
+    margin-left: 290px;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 10s
+  }
+  
+  
+  .demo {
+    font-size: 40px;
+    width: 850px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 535px;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 12s
+  }
+  
+  #last {
+    position: absolute;
+    color: black;
+    top: 1385px;
+    left: 775px;
+    font-size: 40px;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 13s
+  }
+  
+  #ok {
+    width: 1329px;
+    margin-left: 290px;
+    margin-top: 105px;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 14s
+  }
+  
+  .naver {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    width: 455px;
+    margin-left: 400px;
+    margin-top: 200px;
+    line-height: 1.2;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 15s
+  }
+  
+  #again {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    margin-left: 400px;
+    margin-top: 15px;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 1.5s
+  }
+  
+  #link {
+    text-decoration: none;
+    margin-left: 400px;
+    margin-top: 85px;
+    text-decoration-line: underline;
+    color: black;
+    text-decoration-style: double;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 15.5s
+  }
+  
+  #phone {
+    position: absolute;
+    left: 1055px;
+    top: 1880px;
+    animation: msg .8s forwards;
+    opacity: 0;
+    animation-delay: 16s
+  }
+  
+  #link:hover {
+    color: aqua;
+  }
+  
+  #black {
+    border: 1px solid black;
+    margin-top: 255px;
+    height: 755px;
+    background-color: rgba(0, 0, 0, 0.893)
+  }
+  
+  #bphoto {
+    margin-top: 80px;
+    margin-left: 380px;
+  }
+  
+  #speak {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    margin-left: 1020px;
+    position: absolute;
+    top: 2850px;
+    color: white;
+  }
+  
+  #freely {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    margin-left: 1020px;
+    position: absolute;
+    top: 2922px;
+    color: rgb(90, 240, 90);
+  }
+  
+  #pq {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    margin-left: 999px;
+    margin-top: -325px;
+    color: white;
+  }
+  
+  
+  
+  .onekeep {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    margin-left: 450px;
+  }
+  
+  #keeppara {
+    margin-top: 25px;
+  }
+  
+  #keep {
+    font-size: 48px;
+    width: 385px;
+    margin-top: 265px;
+  }
+  
+  #picchat {
+    margin-left: 600px;
+    margin-top: -367px;
+  }
+  
+  #show {
+    margin-left: 560px;
+    position: absolute;
+    top: 3580px;
+  }
+  
+  #nlink:hover {
+    color: aqua;
+  }
+  
+  .icon {
+    z-index: 1;
+  }
+  
+  /**about girl with emoji**/
+  .girlwithemoji {
+    margin-left: 500px;
+    margin-top: 200px;
+    position: relative;
+  }
+  
+  .bemoji {
+    position: absolute;
+    left: 500px;
+    height: 285px;
+    margin-top: 440px;
+  }
+  
+  .say {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    position: absolute;
+    top: 4505px;
+    margin-left: 195px;
+    line-height: 1;
+  }
+  
+  .paraf {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 195px;
+    position: absolute;
+    top: 4650px;
+  }
+  
+  /**this section about jio mart**/
+  .jiomart {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hofjio {
+    font-size: 55px;
+    position: absolute;
+    left: 485px;
+    ;
+    line-height: 1;
+    margin-top: 255px;
+  }
+  
+  .jiopara {
+    position: absolute;
+    top: 5465px;
+    width: 400px;
+    margin-left: 485px;
+  }
+  
+  .jio {
+    margin-left: 495px;
+    position: absolute;
+    bottom: -250px
+  }
+  
+  /**this section is about the green section**/
+  .green {
+  
+    height: 665px;
+    margin-top: 905px;
+    background-color: rgba(134, 230, 134, 0.792);
+    border-radius: 0 0 55px 55px;
+    z-index: 1;
+  }
+  
+  .hed {
+    margin-left: 405px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    float: left;
+    margin-top: 100px;
+  }
+  
+  
+  
+  .right {
+    height: 42px;
+    margin-top: 425px;
+    position: absolute;
+    left: 415px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 2s;
+    box-shadow: inset 0 0 0 0;
+  
+    cursor: pointer
+  }
+  
+  .left {
+    height: 40px;
+    margin-top: 425px;
+    position: absolute;
+    left: 355px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 1s;
+    box-shadow: inset 0 0 0 0;
+  
+    cursor: pointer
+  }
+  
+  .right:hover,
+  .left:hover {
+    box-shadow: inset 0 25px 25px 20px rgb(255, 255, 255);
+  
+  }
+  
+  .gh {
+    font-size: 35px;
+    float: right;
+    margin-top: 145px;
+  }
+  
+  .af {
+    margin-top: 255px;
+    width: 355px;
+    float: right;
+    position: absolute;
+    left: 22%;
+  }
+  
+  .fa-brands {
+    position: absolute;
+    margin-top: 100px;
+    right: 350px;
+  }
+  
+  .psec {
+    width: 25%;
+    height: 465px;
+    margin-left: 1405px;
+    position: absolute;
+    bottom: -5700px;
+    background: #ffffff;
+    border-radius: 25px;
+  
+  }
+  
+  .read {
+    border: 1px solid black;
+    margin-top: 365PX;
+    width: 120PX;
+    height: 45PX;
+    border-radius: 45px;
+    text-align: center;
+    margin-left: 90px;
+    transition: 1s;
+    box-shadow: inset 0 0 0 0;
+    cursor: pointer
+  }
+  
+  .read:hover {
+    background: #000;
+    color: white;
+    box-shadow: inset 0 25px 25px 30px black;
+  }
+  
+  .r {
+    margin-top: 13px;
+  
+  }
+  
+  /**first para of green**/
+  .nxtp {
+    width: 25%;
+    height: 425px;
+    margin-left: 855px;
+  
+    position: absolute;
+    bottom: -5700px;
+    background: #ffffff;
+    border-radius: 25px;
+  }
+  
+  #iconw {
+    position: absolute;
+    left: 70px;
+  }
+  
+  .n1 {
+    font-size: 35px;
+    margin-left: 65px;
+    margin-top: 140px;
+  }
+  
+  .afterh {
+    width: 355px;
+    margin-left: 71px;
+    margin-top: 25px;
+  }
+  
+  .pdo {
+    border: 1px solid black;
+    margin-top: 36PX;
+    width: 120PX;
+    height: 45PX;
+    border-radius: 45px;
+    text-align: center;
+    margin-left: 70px;
+    transition: 1s;
+    box-shadow: inset 0 0 0px 0;
+    cursor: pointer;
+  }
+  
+  .rd {
+    margin-top: 13px;
+  }
+  
+  .pdo:hover {
+    background: #000;
+    color: white;
+    box-shadow: inset 0 25px 25px 30px black;
+  
+  }
+  
+  /**about last part of the page**/
+  .last {
+    background: rgba(0, 0, 0, 0.971);
+    height: 700px;
+    ;
+  
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  .last ul .a,
+  .b,
+  .c,
+  .d {
+    list-style: none;
+    color: white;
+    display: inline-block;
+    margin-left: 150px;
+    font-size: small;
+  
+  }
+  
+  .last ul .a {
+    margin-left: 655px;
+    margin-top: 150px;
+  }
+  
+  .whiteicon {
+    margin-left: 355px;
+  
+    cursor: pointer
+  }
+  
+  
+  .home li {
+    list-style: none;
+    color: white;
+    display: inline-block;
+    margin-left: 150px;
+    font-size: larger;
+    cursor: pointer;
+  }
+  
+  li:hover,
+  .b2:hover,
+  .b3:hover,
+  .b4:hover,
+  .b5:hover,
+  .s2:hover,
+  .s3:hover,
+  .s4:hover,
+  .s5:hover,
+  .f2:hover,
+  .f3:hover,
+  .f4:hover,
+  .f5:hover {
+    color: rgb(90, 240, 90);
+  
+  }
+  
+  .home .theone {
+    margin-left: 655px;
+  }
+  
+  .blog li {
+    list-style: none;
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 150px;
+    font-size: larger;
+    margin-top: 30px;
+    cursor: pointer
+  }
+  
+  .blog .b2 {
+    margin-left: 655px;
+    cursor: pointer
+  }
+  
+  .blog .b3 {
+    margin-left: 180px;
+    cursor: pointer
+  }
+  
+  /**3rd row of black box**/
+  .stories li {
+    list-style: none;
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 150px;
+    font-size: larger;
+    margin-top: 30px;
+  }
+  
+  .stories .s2 {
+    margin-left: 655px;
+    cursor: pointer
+  }
+  
+  .stories .s4 {
+    position: absolute;
+    left: 950px;
+    cursor: pointer
+  }
+  
+  .s3 {
+    cursor: pointer;
+  }
+  
+  .s5 {
+    position: absolute;
+    right: 475px;
+    cursor: pointer
+  }
+  
+  /**4th row in the black box**/
+  .forbuis li {
+    list-style: none;
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 150px;
+    font-size: larger;
+    margin-top: 30px;
+  }
+  
+  .forbuis .f2 {
+    margin-left: 655px;
+    cursor: pointer
+  }
+  
+  .f5 {
+    position: absolute;
+    right: 429px;
+    cursor: pointer
+  }
+  
+  .f4 {
+    position: absolute;
+    right: 665px;
+    cursor: pointer
+  }
+  
+  .f3 {
+    position: absolute;
+    left: 720px;
+    cursor: pointer
+  }
+  
+  .newbut {
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(90, 240, 90);
+    width: 150PX;
+    height: 45PX;
+    border-radius: 45px;
+    text-align: center;
+    margin-left: 350px;
+  
+    transition: 1s;
+    box-shadow: inset 0 0 0 0 rgb(36, 0, 0);
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .newbut:hover {
+    box-shadow: inset 0 0 25px 30px whitesmoke;
+  }
+  
+  .txtbut {
+    margin-top: 13px;
+  
+  }
+  
+  /**line undeer download**/
+  .oneline {
+    border: 0.5px solid rgba(90, 240, 90, 0.496);
+    margin-top: 100px;
+    width: 1140px;
+    margin-left: 350px;
+  
+  }
+  
+  .iconsoftw .l {
+    color: #ffffff;
+    list-style: none;
+    display: inline-block;
+    margin-left: 365px;
+    margin-top: 80px;
+    font-size: smaller;
+    ;
+    cursor: pointer
+  }
+  
+  .t {
+    color: #ffffff;
+    list-style: none;
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 92px;
+    font-size: smaller;
+  
+    cursor: pointer
+  }
+  
+  #twitter {
+    position: absolute;
+    left: 800px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 1;
+  }
+  
+  #tcircle {
+    position: absolute;
+    left: 782px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    bottom: -6390px;
+    transition: 1s;
+  }
+  
+  #tcircle:hover,
+  #icircle:hover,
+  #ucircle:hover,
+  #fb:hover {
+    box-shadow: inset 0 200px 0px 0px rgba(255, 255, 255, 0.869);
+  }
+  
+  #instagram {
+    position: absolute;
+    left: 900px;
+    cursor: pointer;
+    z-index: 1;
+  
+  }
+  
+  #icircle {
+    position: absolute;
+    left: 882px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    bottom: -6390px;
+    transition: 1s;
+  }
+  
+  #youtube {
+    position: absolute;
+    left: 1000px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  #fb {
+    position: absolute;
+    left: 1082px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    bottom: -6390px;
+    transition: 1s;
+  
+  
+  
+  }
+  
+  #ucircle {
+    position: absolute;
+    left: 985px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    bottom: -6390px;
+    transition: 1s;
+  
+  
+  }
+  
+  #fbicon {
+    position: absolute;
+    right: 775px;
+    z-index: 1;
+  
+  }
+  
+  #select {
+    position: absolute;
+    right: 400px;
+    margin-top: 85px;
+    height: 45px;
+    width: 165px;
+    border-radius: 35px;
+    background: black;
+    color: #ffffff;
+    border: 2px solid white;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    ;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .last ul li {
+      display: block;
+    }
+  }
